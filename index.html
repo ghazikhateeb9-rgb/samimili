@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>صمملي | تصميم صور وتطبيقات</title>
+  <meta name="description" content="صمملي: نصمم الصور والهويات البصرية وتطبيقات الجوال بلمسة إبداعية.">
+  <meta name="theme-color" content="#6c3cff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- تعريف اللوجو (يُستخدم عدة مرات) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#6c3cff"/>
+        <stop offset="0.55" stop-color="#c13cff"/>
+        <stop offset="1" stop-color="#ff5fa2"/>
+      </linearGradient>
+      <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ffd86b"/>
+        <stop offset="1" stop-color="#ff9a3c"/>
+      </linearGradient>
+    </defs>
+    <symbol id="logo-mark" viewBox="0 0 100 100">
+      <rect x="4" y="4" width="92" height="92" rx="30" fill="url(#lg1)"/>
+      <path d="M4 60 Q40 30 96 48 L96 66 Q96 96 66 96 L34 96 Q4 96 4 66 Z" fill="#fff" opacity=".08"/>
+      <text x="50" y="70" text-anchor="middle" font-family="Cairo, sans-serif" font-weight="900" font-size="64" fill="#fff">ص</text>
+      <path d="M78 14 L81.5 24 L92 27.5 L81.5 31 L78 41 L74.5 31 L64 27.5 L74.5 24 Z" fill="url(#lg2)"/>
+      <circle cx="22" cy="80" r="4" fill="#fff" opacity=".85"/>
+    </symbol>
+  </svg>
+
+  <div class="progress" id="progress"></div>
+
+  <!-- الهيدر -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="صمملي">
+        <svg class="brand-mark"><use href="#logo-mark"/></svg>
+        <span class="brand-name">صمملي</span>
+      </a>
+      <nav class="links" id="links">
+        <a href="#services">خدماتنا</a>
+        <a href="#portfolio">أعمالنا</a>
+        <a href="#process">كيف نشتغل</a>
+        <a href="#packages">الباقات</a>
+        <a href="#order">اطلب الآن</a>
+        <a href="#faq">أسئلة</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" id="themeBtn" aria-label="تبديل الوضع">🌙</button>
+        <a class="btn btn-primary btn-sm hide-sm" href="https://www.facebook.com/profile.php?id=61595234725404&locale=ar_AR" target="_blank" rel="noopener">تواصل عبر فيسبوك</a>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="القائمة">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- الهيرو -->
+  <section class="hero" id="home">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <span class="chip">✨ استوديو تصميم إبداعي</span>
+        <h1>نحوّل أفكارك إلى <span class="grad">تصاميم</span> تُبهر الجميع</h1>
+        <p>في <b>صمملي</b> نصمم لك الصور، الهويات البصرية، وواجهات التطبيقات بشكل عصري واحترافي، عشان مشروعك يبان من أول نظرة.</p>
+        <div class="hero-btns">
+          <a href="#order" class="btn btn-primary">ابدأ مشروعك 🚀</a>
+          <a href="#portfolio" class="btn btn-ghost">شاهد أعمالنا</a>
+        </div>
+        <div class="stats">
+          <div><b data-count="150">0</b><span>تصميم منجز</span></div>
+          <div><b data-count="60">0</b><span>عميل سعيد</span></div>
+          <div><b data-count="24">0</b><span>ساعة متوسط التسليم</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="phone">
+          <div class="notch"></div>
+          <div class="screen">
+            <div class="s-top"><svg class="s-logo"><use href="#logo-mark"/></svg><span>صمملي</span></div>
+            <div class="s-card c1">🎨 تصميم صور</div>
+            <div class="s-card c2">📱 واجهات تطبيقات</div>
+            <div class="s-card c3">🪄 هوية بصرية</div>
+            <div class="s-bar"><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        <div class="float f1">🎨</div>
+        <div class="float f2">📱</div>
+        <div class="float f3">⚡</div>
+        <div class="float f4">💎</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الخدمات -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="chip">خدماتنا</span>
+        <h2>شو بنقدر نسوي لك؟</h2>
+        <p>كل شي تحتاجه لحضور بصري قوي، من فكرة بسيطة لتطبيق كامل.</p>
+      </div>
+      <div class="grid cards">
+        <article class="card service reveal">
+          <div class="ico">🖼️</div>
+          <h3>تصميم الصور</h3>
+          <p>بوستات سوشيال ميديا، بنرات، إعلانات، وصور منتجات بشكل جذاب.</p>
+          <ul><li>بوستات وستوريز</li><li>بنرات وإعلانات</li><li>تعديل وتحسين الصور</li></ul>
+        </article>
+        <article class="card service reveal">
+          <div class="ico">📱</div>
+          <h3>تصميم التطبيقات</h3>
+          <p>واجهات UI/UX عصرية وسهلة الاستخدام لتطبيقات الجوال والويب.</p>
+          <ul><li>تصميم الشاشات</li><li>نماذج تفاعلية</li><li>تجربة مستخدم سلسة</li></ul>
+        </article>
+        <article class="card service reveal">
+          <div class="ico">🪄</div>
+          <h3>الهوية البصرية</h3>
+          <p>لوجو، ألوان، وخطوط تعطي علامتك التجارية شخصية مميزة.</p>
+          <ul><li>تصميم لوجو</li><li>بطاقات وأوراق رسمية</li><li>دليل الهوية</li></ul>
+        </article>
+        <article class="card service reveal">
+          <div class="ico">🎬</div>
+          <h3>موشن وعروض</h3>
+          <p>عروض تقديمية وتصاميم متحركة بسيطة تلفت الانتباه.</p>
+          <ul><li>عروض تقديمية</li><li>إنفوجرافيك</li><li>لقطات متحركة</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- معرض الأعمال -->
+  <section class="section alt" id="portfolio">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="chip">أعمالنا</span>
+        <h2>نماذج من إبداعنا</h2>
+        <p>اختر التصنيف وشاهد أسلوبنا.</p>
+      </div>
+      <div class="filters reveal" id="filters">
+        <button class="pill active" data-f="all">الكل</button>
+        <button class="pill" data-f="img">صور</button>
+        <button class="pill" data-f="app">تطبيقات</button>
+        <button class="pill" data-f="brand">هويات</button>
+      </div>
+      <div class="grid works" id="works">
+        <div class="work w1" data-t="img"><span>🍔</span><div class="cap"><b>بوست مطعم</b><small>تصميم صور</small></div></div>
+        <div class="work w2" data-t="app"><span>🛒</span><div class="cap"><b>تطبيق متجر</b><small>واجهات تطبيق</small></div></div>
+        <div class="work w3" data-t="brand"><span>☕</span><div class="cap"><b>هوية مقهى</b><small>هوية بصرية</small></div></div>
+        <div class="work w4" data-t="app"><span>💪</span><div class="cap"><b>تطبيق لياقة</b><small>واجهات تطبيق</small></div></div>
+        <div class="work w5" data-t="img"><span>👗</span><div class="cap"><b>إعلان أزياء</b><small>تصميم صور</small></div></div>
+        <div class="work w6" data-t="brand"><span>🏥</span><div class="cap"><b>هوية عيادة</b><small>هوية بصرية</small></div></div>
+      </div>
+      <p class="note">* نماذج توضيحية. اطلب منا أعمالنا الحقيقية عبر فيسبوك.</p>
+    </div>
+  </section>
+
+  <!-- العملية -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="chip">كيف نشتغل</span>
+        <h2>٤ خطوات بس</h2>
+      </div>
+      <div class="grid steps">
+        <div class="step reveal"><i>1</i><h3>تواصل معنا</h3><p>احكيلنا فكرتك ومتطلباتك.</p></div>
+        <div class="step reveal"><i>2</i><h3>نرسم الفكرة</h3><p>نقدم لك مسودة أولية.</p></div>
+        <div class="step reveal"><i>3</i><h3>التعديل</h3><p>نعدّل لحد ما يعجبك.</p></div>
+        <div class="step reveal"><i>4</i><h3>التسليم</h3><p>تستلم ملفاتك جاهزة.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الباقات -->
+  <section class="section alt" id="packages">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="chip">الباقات</span>
+        <h2>اختر الباقة المناسبة</h2>
+        <p>أسعار واضحة وبسيطة، وللطلبات الخاصة تواصل معنا.</p>
+      </div>
+      <div class="grid pricing">
+        <div class="card plan reveal">
+          <h3>بسيطة</h3>
+          <div class="price"><b>3$</b><small>للبدايات</small></div>
+          <ul><li>✔ تصميم واحد</li><li>✔ تعديلان مجانيان</li><li>✔ تسليم سريع</li></ul>
+          <button class="btn btn-ghost choose" data-plan="بسيطة">اختر هذه الباقة</button>
+        </div>
+        <div class="card plan featured reveal">
+          <span class="badge">الأكثر طلبًا</span>
+          <h3>احترافية</h3>
+          <div class="price"><b>5$</b><small>للمشاريع الناشئة</small></div>
+          <ul><li>✔ حتى ٥ تصاميم</li><li>✔ تعديلات مفتوحة</li><li>✔ لوجو + ألوان</li><li>✔ ملفات مفتوحة المصدر</li></ul>
+          <button class="btn btn-primary choose" data-plan="احترافية">اختر هذه الباقة</button>
+        </div>
+        <div class="card plan reveal">
+          <h3>متكاملة</h3>
+          <div class="price"><b>15$</b><small>للشركات والتطبيقات</small></div>
+          <ul><li>✔ هوية كاملة</li><li>✔ تصميم تطبيق</li><li>✔ متابعة مستمرة</li></ul>
+          <button class="btn btn-ghost choose" data-plan="متكاملة">اختر هذه الباقة</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- منشئ الطلب -->
+  <section class="section" id="order">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="chip">اطلب الآن</span>
+        <h2>جهّز طلبك بثواني</h2>
+        <p>اختر ما تريده، وننسخ لك الرسالة جاهزة وتفتح لك محادثتنا على فيسبوك.</p>
+      </div>
+      <form class="order card reveal" id="orderForm" onsubmit="return false">
+        <div class="field">
+          <label>شو بدك نصمم لك؟</label>
+          <div class="opts" id="services-opts">
+            <label class="opt"><input type="checkbox" value="تصميم صور"><span>🖼️ تصميم صور</span></label>
+            <label class="opt"><input type="checkbox" value="تصميم تطبيق"><span>📱 تصميم تطبيق</span></label>
+            <label class="opt"><input type="checkbox" value="لوجو وهوية"><span>🪄 لوجو وهوية</span></label>
+            <label class="opt"><input type="checkbox" value="عرض تقديمي / موشن"><span>🎬 موشن وعروض</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <label>الباقة</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="plan" value="بسيطة"><span>بسيطة</span></label>
+            <label class="opt"><input type="radio" name="plan" value="احترافية" checked><span>احترافية</span></label>
+            <label class="opt"><input type="radio" name="plan" value="متكاملة"><span>متكاملة</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <label>الاستعجال</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="speed" value="عادي" checked><span>🐢 عادي</span></label>
+            <label class="opt"><input type="radio" name="speed" value="سريع"><span>🐇 سريع</span></label>
+            <label class="opt"><input type="radio" name="speed" value="مستعجل جدًا"><span>⚡ مستعجل جدًا</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="oname">اسمك</label>
+          <input id="oname" type="text" placeholder="اكتب اسمك">
+        </div>
+        <div class="field">
+          <label for="onote">وصف الفكرة</label>
+          <textarea id="onote" rows="3" placeholder="احكيلنا عن مشروعك، ألوانك المفضلة، أي مثال عجبك..."></textarea>
+        </div>
+        <div class="preview" id="preview"></div>
+        <div class="order-btns">
+          <button class="btn btn-primary" id="sendBtn" type="button">📋 انسخ الرسالة وافتح فيسبوك</button>
+          <button class="btn btn-ghost" id="copyBtn" type="button">نسخ فقط</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- الأسئلة -->
+  <section class="section alt" id="faq">
+    <div class="container narrow">
+      <div class="sec-head reveal">
+        <span class="chip">أسئلة شائعة</span>
+        <h2>عندك سؤال؟</h2>
+      </div>
+      <div class="faq">
+        <details class="reveal"><summary>كم يستغرق تنفيذ التصميم؟</summary><p>التصاميم البسيطة خلال يوم أو يومين، والمشاريع الأكبر مثل التطبيقات تحتاج عدة أيام حسب التفاصيل.</p></details>
+        <details class="reveal"><summary>هل أقدر أطلب تعديلات؟</summary><p>طبعًا، التعديلات جزء من الخدمة حتى تحصل على النتيجة اللي تعجبك.</p></details>
+        <details class="reveal"><summary>شو الملفات اللي بستلمها؟</summary><p>بنسلمك الملفات بالصيغ اللي تحتاجها (PNG، JPG، PDF وغيرها) جاهزة للاستخدام.</p></details>
+        <details class="reveal"><summary>كيف أتواصل معكم؟</summary><p>أسهل طريقة عبر صفحتنا على فيسبوك، ابعت رسالة وبنرد عليك بأسرع وقت.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- التواصل -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="cta card reveal">
+        <svg class="cta-logo"><use href="#logo-mark"/></svg>
+        <h2>جاهز نبدأ مع بعض؟</h2>
+        <p>تواصل معنا عبر فيسبوك وخلينا نصمم لك شي مميز.</p>
+        <a class="btn btn-fb" href="https://www.facebook.com/profile.php?id=61595234725404&locale=ar_AR" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8c-.3 0-1.3-.2-2.4-.2-2.5 0-4.1 1.5-4.1 4.2v2.7H7.6v3.3h2.8V22h3.1z"/></svg>
+          تواصل معنا عبر فيسبوك
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot">
+      <div class="brand"><svg class="brand-mark"><use href="#logo-mark"/></svg><span class="brand-name">صمملي</span></div>
+      <p>© <span id="year"></span> صمملي. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <!-- زر فيسبوك عائم -->
+  <a class="fab" href="https://www.facebook.com/profile.php?id=61595234725404&locale=ar_AR" target="_blank" rel="noopener" aria-label="فيسبوك">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8c-.3 0-1.3-.2-2.4-.2-2.5 0-4.1 1.5-4.1 4.2v2.7H7.6v3.3h2.8V22h3.1z"/></svg>
+  </a>
+  <button class="top" id="topBtn" aria-label="للأعلى">↑</button>
+
+  <!-- شريط تنقل بأسلوب التطبيقات (للجوال) -->
+  <nav class="tabbar" id="tabbar">
+    <a href="#home" class="active"><i>🏠</i><span>الرئيسية</span></a>
+    <a href="#services"><i>🎨</i><span>خدمات</span></a>
+    <a href="#portfolio"><i>🖼️</i><span>أعمال</span></a>
+    <a href="#order"><i>📝</i><span>اطلب</span></a>
+    <a href="#contact"><i>💬</i><span>تواصل</span></a>
+  </nav>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
